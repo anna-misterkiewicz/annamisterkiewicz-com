@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anna | Geospatial AI Portfolio",
-  description: "Selected geospatial, remote sensing and spatial analysis work by Anna.",
+  title: "Anna Misterkiewicz | Geospatial AI Portfolio",
+  description: "Selected geospatial, remote sensing and spatial analysis work by Anna Misterkiewicz.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
