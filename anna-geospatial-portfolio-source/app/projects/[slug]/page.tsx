@@ -9,20 +9,20 @@ const projects = {
       "Geospatial research supporting the investigation of Zuun Baruun Kherem, an archaeological landscape in Mongolia.",
     facts: [
       ["Role", "GIS and research contributor"],
-      ["Data", "Landsat imagery, spatial records and geophysical evidence"],
-      ["Methods", "Landscape analysis, image interpretation and database management"],
+      ["Data", "Landsat imagery, spatial records and photogrammetric survey data"],
+      ["Methods", "Spatial distribution, layout analysis and image interpretation"],
       ["Outcome", "Peer-reviewed publication"],
     ],
     sections: [
       {
         number: "01",
         title: "The question",
-        body: "The research investigated the form, setting and interpretation of Zuun Baruun Kherem. Spatial evidence was used alongside archaeological and geophysical information to understand the site within its wider landscape.",
+        body: "The research investigated the form, setting and interpretation of Zuun Baruun Kherem. Spatial evidence was used alongside archaeological material and features visible in photogrammetric survey data to understand the city and its wider landscape.",
       },
       {
         number: "02",
         title: "My contribution",
-        body: "I supported GIS, spatial database management, Landsat analysis, landscape interpretation and the interpretation of magnetometry evidence. This work helped organise multiple forms of evidence into a coherent spatial picture.",
+        body: "I used GIS, spatial database management and Landsat analysis to support landscape interpretation. I analysed the layout of the city through the spatial distribution of archaeological material and features recorded by photogrammetric survey, bringing multiple forms of evidence into a coherent spatial picture.",
       },
       {
         number: "03",
