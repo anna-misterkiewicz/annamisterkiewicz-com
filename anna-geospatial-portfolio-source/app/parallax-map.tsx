@@ -13,7 +13,7 @@ export default function ParallaxMap() {
     const update = () => {
       frame = 0;
       if (layer.current) {
-        const shift = Math.min(window.scrollY * 0.16, 130);
+        const shift = Math.min(window.scrollY * 0.08, 70);
         layer.current.style.transform = `translate3d(0, ${shift}px, 0) scale(1.04)`;
       }
     };
