@@ -1,3 +1,5 @@
+import ParallaxMap from "./parallax-map";
+
 const Arrow = () => <span aria-hidden="true">&#8599;</span>;
 
 const focusAreas = [
@@ -36,8 +38,8 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Anna, home">
-          ANNA<span className="wordmark-dot">.</span>
+        <a className="wordmark" href="#top" aria-label="Anna Misterkiewicz, home">
+          ANNA MISTERKIEWICZ<span className="wordmark-dot">.</span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
@@ -64,13 +66,7 @@ export default function Home() {
             <span aria-hidden="true">&#8595;</span>
           </a>
         </div>
-        <div className="map-grid" aria-hidden="true">
-          <div className="coordinate">54.9783° N<br />1.6178° W</div>
-          <div className="crosshair"><span /><i /></div>
-          <div className="contour contour-one" />
-          <div className="contour contour-two" />
-          <div className="contour contour-three" />
-        </div>
+        <ParallaxMap />
       </section>
 
       <section className="section" id="work">
@@ -102,14 +98,17 @@ export default function Home() {
             <div className="project-outcome">
               <p><strong>Outcome</strong></p>
               <p>The work contributed to a peer-reviewed research publication.</p>
-              <a href="https://doi.org/10.1007/s41826-025-00113-2" target="_blank" rel="noreferrer">
+              <a className="project-page-link" href="/projects/mongolia">
+                Explore project <span aria-hidden="true">&#8594;</span>
+              </a>
+              <a className="publication-link" href="https://doi.org/10.1007/s41826-025-00113-2" target="_blank" rel="noreferrer">
                 View publication <Arrow />
               </a>
             </div>
           </div>
         </article>
 
-        <article className="next-project">
+        <a className="next-project" href="/projects/geospatial-projects" aria-label="Open new geospatial projects page">
           <span className="next-number">02</span>
           <div>
             <p className="project-meta">NEXT / IN DEVELOPMENT</p>
@@ -120,7 +119,7 @@ export default function Home() {
             data, methods, results, limitations and code.
           </p>
           <span className="status"><i /> Building</span>
-        </article>
+        </a>
       </section>
 
       <section className="focus-band" aria-label="Current focus areas">
@@ -205,7 +204,7 @@ export default function Home() {
           <a href="#top">Back to top <span aria-hidden="true">&#8593;</span></a>
         </div>
         <div className="footer-base">
-          <strong>ANNA<span>.</span></strong>
+          <strong>ANNA MISTERKIEWICZ<span>.</span></strong>
           <p>Geospatial AI portfolio · 2026</p>
         </div>
       </footer>
