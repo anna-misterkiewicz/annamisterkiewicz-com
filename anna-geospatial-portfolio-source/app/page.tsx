@@ -4,34 +4,42 @@ import HeroParallax from "./hero-parallax";
 const Arrow = () => <span aria-hidden="true">&#8599;</span>;
 
 const focusAreas = [
-  "Geospatial AI",
+  "Environmental change",
+  "Urban analysis",
+  "Landscape analysis",
   "Remote sensing",
-  "Earth observation",
-  "Spatial analysis",
-  "Python workflows",
+  "Geospatial AI",
 ];
 
 const skills = [
   {
     number: "01",
     title: "Geospatial",
-    items: "ArcGIS · QGIS · Spatial analysis · Landscape analysis · Spatial data management",
+    items: "QGIS · ArcGIS · Spatial analysis · Landscape analysis · Spatial data management",
+    note: "Confident",
   },
   {
     number: "02",
     title: "Remote sensing",
-    items: "Landsat imagery · Satellite image interpretation",
+    items: "Satellite image interpretation · Environmental change analysis · SNAP",
+    note: "SNAP familiar · developing through projects",
   },
   {
     number: "03",
-    title: "Development",
-    items: "Python · Git · GitHub",
-    note: "Currently developing",
+    title: "Survey & photogrammetry",
+    items: "Photogrammetric survey · Survey planning · Surface models · Hillshade visualisation",
+    note: "Confident",
   },
   {
     number: "04",
+    title: "Programming",
+    items: "Programming fundamentals",
+    note: "Beginner",
+  },
+  {
+    number: "05",
     title: "Research",
-    items: "Data interpretation · Academic research · Field data collection · Scientific communication",
+    items: "Spatial interpretation · Artefact documentation · Academic research · Scientific communication",
   },
 ];
 
@@ -93,16 +101,19 @@ export default function Home() {
               <h3>Landscape analysis in Mongolia</h3>
               <p>
                 I contributed to research investigating Zuun Baruun Kherem, an
-                archaeological landscape in Mongolia. My work supported GIS,
-                spatial database management, Landsat analysis, landscape
-                interpretation and analysis of the city layout through the
-                spatial distribution of material and features recorded by
-                photogrammetric survey.
+                archaeological landscape in Mongolia. Using QGIS, I interpreted
+                city spaces through artefact distributions, examined satellite
+                imagery for environmental change—including former riverbed
+                movement—and produced hillshade views from photogrammetric
+                surface models.
               </p>
             </div>
             <div className="project-outcome">
               <p><strong>Outcome</strong></p>
-              <p>The work contributed to a peer-reviewed research publication.</p>
+              <p>
+                The spatial interpretation and my pottery documentation were
+                incorporated into a peer-reviewed research publication.
+              </p>
               <a className="project-page-link" href="/projects/mongolia">
                 Explore project <span aria-hidden="true">&#8594;</span>
               </a>
@@ -148,7 +159,8 @@ export default function Home() {
             <p>
               I focus on using remote sensing, Earth observation and GIS to
               identify meaningful spatial patterns and communicate how the
-              evidence supports an interpretation.
+              evidence supports an interpretation. I am particularly interested
+              in environmental change, urban space and landscape-scale analysis.
             </p>
             <p>
               My foundation in geospatial technology developed through
@@ -159,7 +171,8 @@ export default function Home() {
             <p>
               I am building on that experience through programming, data
               analysis and geospatial AI, with an emphasis on rigorous methods
-              and work that can be clearly explained and reproduced.
+              and work that can be clearly explained and reproduced. Programming
+              is currently a beginner skill that I am developing deliberately.
             </p>
           </div>
         </div>
