@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.next/
+.wrangler/
+.env*
+pnpm-lock.yaml
+pnpm-workspace.yaml
