@@ -105,7 +105,8 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
 .project-outcome .project-page-link { margin-right: 26px; color: var(--forest); }
 .project-outcome .publication-link { color: var(--muted); border-color: var(--muted); }
 .next-project { display: grid; grid-template-columns: 10% 34% 1fr auto; align-items: center; gap: 30px; padding: 38px 0; border-bottom: 1px solid var(--line); transition: padding .25s, background .25s; }
-.next-project:hover, .next-project:focus-visible { padding-left: 20px; padding-right: 20px; background: rgba(238,155,99,.14); }
+.portfolio-note { color: var(--muted); }
+.portfolio-note h3 { color: var(--ink); }
 .next-number { color: var(--muted); font: .7rem var(--font-geist-mono); }
 .next-project h3 { margin: 8px 0; font-size: 1.7rem; }
 .status { display: flex; align-items: center; gap: 8px; font: .68rem var(--font-geist-mono); text-transform: uppercase; letter-spacing: .08em; }
@@ -139,6 +140,8 @@ footer h2 { margin: 55px 0 35px; max-width: 1000px; }
 .footer-intro { max-width: 560px; margin-left: 50%; color: rgba(255,255,255,.62); line-height: 1.7; }
 .contact-row { margin-top: 90px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); display: flex; justify-content: space-between; font-size: .78rem; color: rgba(255,255,255,.7); }
 .contact-row a { color: var(--accent); }
+.contact-links { display: flex; gap: 30px; }
+.contact-links a { display: inline-flex; gap: 8px; padding-bottom: 3px; border-bottom: 1px solid rgba(238,155,99,.45); }
 .footer-base { display: flex; justify-content: space-between; align-items: end; padding-top: 55px; }
 .footer-base strong { font-size: 1.2rem; letter-spacing: .08em; }
 .footer-base p { margin: 0; color: rgba(255,255,255,.42); font: .64rem var(--font-geist-mono); text-transform: uppercase; }
@@ -202,6 +205,8 @@ footer h2 { margin: 55px 0 35px; max-width: 1000px; }
   footer { padding: 80px 20px 24px; }
   .footer-intro { margin-left: 0; }
   .contact-row, .footer-base { gap: 20px; }
+  .contact-row { align-items: flex-end; }
+  .contact-links { flex-direction: column; align-items: flex-start; gap: 14px; }
   .project-header { padding: 22px 20px; }
   .project-hero { min-height: 650px; padding: 145px 20px 65px; }
   .project-hero h1 { font-size: clamp(3.3rem,15vw,5rem); }
