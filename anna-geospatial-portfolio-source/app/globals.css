@@ -3,7 +3,7 @@
 :root {
   --ink: #142c24;
   --forest: #183d32;
-  --accent: #9fd6e2;
+  --accent: #ee9b63;
   --paper: #f4f1e8;
   --muted: #6b756f;
   --line: rgba(20, 44, 36, 0.2);
@@ -47,6 +47,7 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
   background: var(--forest);
   color: #fff;
 }
+.hero-parallax-content { position: relative; z-index: 2; will-change: transform, opacity; }
 .eyebrow, .section-index, .project-meta, .education span, .project-label {
   font-family: var(--font-geist-mono);
   font-size: .68rem;
@@ -57,7 +58,6 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
 .eyebrow span { width: 34px; height: 1px; background: var(--accent); }
 .hero h1 {
   position: relative;
-  z-index: 2;
   max-width: 1160px;
   margin: 54px 0 45px;
   font-size: clamp(4rem, 8.8vw, 8.7rem);
@@ -66,7 +66,7 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
   line-height: .91;
 }
 .hero h1 em { font-family: Georgia, serif; font-weight: 400; color: var(--accent); }
-.hero-lower { position: relative; z-index: 2; display: flex; align-items: end; justify-content: space-between; }
+.hero-lower { position: relative; display: flex; align-items: end; justify-content: space-between; }
 .hero-lower > p { max-width: 580px; margin: 0 0 0 29%; font-size: 1rem; line-height: 1.7; color: rgba(255,255,255,.72); }
 .circle-link { width: 108px; height: 108px; border: 1px solid rgba(255,255,255,.4); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: .72rem; transition: background .25s, color .25s; }
 .circle-link:hover, .circle-link:focus-visible { background: var(--accent); color: var(--ink); }
@@ -76,7 +76,7 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
 .crosshair span, .crosshair i { position: absolute; background: var(--accent); }
 .crosshair span { width: 40px; height: 1px; left: -11px; top: 9px; }
 .crosshair i { height: 40px; width: 1px; left: 9px; top: -11px; }
-.contour { position: absolute; border: 1px solid rgba(159,214,226,.8); border-radius: 48% 52% 64% 36%; transform: rotate(-17deg); }
+.contour { position: absolute; border: 1px solid rgba(238,155,99,.82); border-radius: 48% 52% 64% 36%; transform: rotate(-17deg); }
 .contour-one { width: 550px; height: 270px; right: -110px; bottom: -70px; }
 .contour-two { width: 440px; height: 210px; right: -55px; bottom: -38px; }
 .contour-three { width: 330px; height: 155px; right: 0; bottom: -5px; }
@@ -88,8 +88,8 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
 .project-feature { display: grid; grid-template-columns: 54% 46%; min-height: 530px; border: 1px solid var(--line); background: #fff; }
 .project-visual { position: relative; min-height: 500px; overflow: hidden; background: var(--ink); color: var(--accent); }
 .project-label { position: absolute; left: 28px; top: 25px; }
-.visual-number { position: absolute; right: 25px; bottom: -35px; color: rgba(159,214,226,.16); font-size: 12rem; font-weight: 700; letter-spacing: -.1em; }
-.survey-line { position: absolute; border: 1px solid rgba(159,214,226,.58); border-radius: 50%; transform: rotate(-13deg); transition: transform .65s cubic-bezier(.2,.75,.2,1); }
+.visual-number { position: absolute; right: 25px; bottom: -35px; color: rgba(238,155,99,.17); font-size: 12rem; font-weight: 700; letter-spacing: -.1em; }
+.survey-line { position: absolute; border: 1px solid rgba(238,155,99,.6); border-radius: 50%; transform: rotate(-13deg); transition: transform .65s cubic-bezier(.2,.75,.2,1); }
 .project-feature:hover .survey-line { transform: translate3d(0,-10px,0) rotate(-13deg); }
 .line-a { width: 760px; height: 330px; left: -80px; top: 80px; }
 .line-b { width: 650px; height: 275px; left: -25px; top: 108px; }
@@ -105,7 +105,7 @@ nav a:hover, nav a:focus-visible { opacity: 1; }
 .project-outcome .project-page-link { margin-right: 26px; color: var(--forest); }
 .project-outcome .publication-link { color: var(--muted); border-color: var(--muted); }
 .next-project { display: grid; grid-template-columns: 10% 34% 1fr auto; align-items: center; gap: 30px; padding: 38px 0; border-bottom: 1px solid var(--line); transition: padding .25s, background .25s; }
-.next-project:hover, .next-project:focus-visible { padding-left: 20px; padding-right: 20px; background: rgba(159,214,226,.16); }
+.next-project:hover, .next-project:focus-visible { padding-left: 20px; padding-right: 20px; background: rgba(238,155,99,.14); }
 .next-number { color: var(--muted); font: .7rem var(--font-geist-mono); }
 .next-project h3 { margin: 8px 0; font-size: 1.7rem; }
 .status { display: flex; align-items: center; gap: 8px; font: .68rem var(--font-geist-mono); text-transform: uppercase; letter-spacing: .08em; }
@@ -152,9 +152,9 @@ footer h2 { margin: 55px 0 35px; max-width: 1000px; }
 .project-kicker { position: relative; z-index: 2; color: var(--accent); font: .69rem var(--font-geist-mono); letter-spacing: .11em; text-transform: uppercase; }
 .project-hero h1 { position: relative; z-index: 2; max-width: 1050px; margin: 30px 0; font-size: clamp(4.4rem, 8vw, 8.4rem); line-height: .9; letter-spacing: -.065em; font-weight: 470; }
 .project-summary { position: relative; z-index: 2; max-width: 650px; margin: 15px 0 0 34%; color: rgba(255,255,255,.7); font-size: 1.04rem; line-height: 1.7; }
-.project-hero-number { position: absolute; right: var(--gutter); bottom: -75px; color: rgba(159,214,226,.1); font-size: 25rem; line-height: 1; font-weight: 760; letter-spacing: -.11em; }
+.project-hero-number { position: absolute; right: var(--gutter); bottom: -75px; color: rgba(238,155,99,.11); font-size: 25rem; line-height: 1; font-weight: 760; letter-spacing: -.11em; }
 .project-topography { position: absolute; inset: 0; opacity: .6; background-image: linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px); background-size: 90px 90px; }
-.project-topography i { position: absolute; display: block; width: 720px; height: 320px; right: -160px; top: 80px; border: 1px solid rgba(159,214,226,.5); border-radius: 46% 54% 62% 38%; transform: rotate(-14deg); }
+.project-topography i { position: absolute; display: block; width: 720px; height: 320px; right: -160px; top: 80px; border: 1px solid rgba(238,155,99,.54); border-radius: 46% 54% 62% 38%; transform: rotate(-14deg); }
 .project-topography i:nth-child(2) { transform: rotate(-14deg) scale(.82); }
 .project-topography i:nth-child(3) { transform: rotate(-14deg) scale(.64); }
 .project-topography i:nth-child(4) { transform: rotate(-14deg) scale(.46); }
@@ -221,4 +221,5 @@ footer h2 { margin: 55px 0 35px; max-width: 1000px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
   .map-grid { transform: none !important; }
+  .hero-parallax-content { transform: none !important; opacity: 1 !important; }
 }
