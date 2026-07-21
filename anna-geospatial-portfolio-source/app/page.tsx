@@ -1,4 +1,5 @@
 import ParallaxMap from "./parallax-map";
+import HeroParallax from "./hero-parallax";
 
 const Arrow = () => <span aria-hidden="true">&#8599;</span>;
 
@@ -50,22 +51,24 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="eyebrow"><span /> Incoming MSc Geospatial Artificial Intelligence student</div>
-        <h1>
-          Spatial thinking,
-          <br />built into <em>evidence.</em>
-        </h1>
-        <div className="hero-lower">
-          <p>
-            I use GIS, remote sensing and spatial data to investigate landscapes
-            and communicate evidence clearly. This portfolio documents my work
-            and technical development as I move into geospatial AI.
-          </p>
-          <a className="circle-link" href="#work" aria-label="View selected work">
-            <span>View work</span>
-            <span aria-hidden="true">&#8595;</span>
-          </a>
-        </div>
+        <HeroParallax>
+          <div className="eyebrow"><span /> Geospatial analysis · Remote sensing · Spatial research</div>
+          <h1>
+            Spatial thinking,
+            <br />built into <em>evidence.</em>
+          </h1>
+          <div className="hero-lower">
+            <p>
+              I use GIS, remote sensing and spatial data to reveal patterns in
+              landscapes and turn complex evidence into clear, defensible insight.
+              I am now extending that foundation into geospatial AI.
+            </p>
+            <a className="circle-link" href="#work" aria-label="View selected work">
+              <span>View work</span>
+              <span aria-hidden="true">&#8595;</span>
+            </a>
+          </div>
+        </HeroParallax>
         <ParallaxMap />
       </section>
 
@@ -92,7 +95,9 @@ export default function Home() {
                 I contributed to research investigating Zuun Baruun Kherem, an
                 archaeological landscape in Mongolia. My work supported GIS,
                 spatial database management, Landsat analysis, landscape
-                interpretation and the interpretation of geophysical evidence.
+                interpretation and analysis of the city layout through the
+                spatial distribution of material and features recorded by
+                photogrammetric survey.
               </p>
             </div>
             <div className="project-outcome">
@@ -132,18 +137,18 @@ export default function Home() {
       <section className="section about" id="about">
         <div className="section-heading">
           <span className="section-index">02 / ABOUT</span>
-          <h2>From spatial foundations<br />to intelligent systems.</h2>
+          <h2>Spatial foundations.<br />A clear technical direction.</h2>
         </div>
         <div className="about-grid">
           <p className="lead">
-            I am preparing to begin an MSc in Geospatial Artificial Intelligence
-            at Newcastle University.
+            I bring a research foundation in GIS, remote sensing and spatial
+            analysis to the next stage of my work in geospatial AI.
           </p>
           <div className="about-copy">
             <p>
-              My interests include remote sensing, Earth observation, GIS,
-              machine learning and the use of spatial data to investigate
-              environmental and landscape questions.
+              I focus on using remote sensing, Earth observation and GIS to
+              identify meaningful spatial patterns and communicate how the
+              evidence supports an interpretation.
             </p>
             <p>
               My foundation in geospatial technology developed through
@@ -152,8 +157,9 @@ export default function Home() {
               support evidence-based interpretation.
             </p>
             <p>
-              I am now building on that experience through programming, data
-              analysis and geospatial AI.
+              I am building on that experience through programming, data
+              analysis and geospatial AI, with an emphasis on rigorous methods
+              and work that can be clearly explained and reproduced.
             </p>
           </div>
         </div>
