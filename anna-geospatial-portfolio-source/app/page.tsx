@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div className="project-copy">
             <div>
-              <p className="project-meta">GIS · LANDSAT · SPATIAL ANALYSIS · RESEARCH</p>
+              <p className="project-meta">GIS · SATELLITE IMAGERY · SPATIAL ANALYSIS · RESEARCH</p>
               <h3>Landscape analysis in Mongolia</h3>
               <p>
                 I contributed to research investigating Zuun Baruun Kherem, an
@@ -124,18 +124,18 @@ export default function Home() {
           </div>
         </article>
 
-        <a className="next-project" href="/projects/geospatial-projects" aria-label="Open new geospatial projects page">
+        <div className="next-project portfolio-note">
           <span className="next-number">02</span>
           <div>
-            <p className="project-meta">NEXT / IN DEVELOPMENT</p>
-            <h3>New geospatial projects</h3>
+            <p className="project-meta">PORTFOLIO / GROWING</p>
+            <h3>New work, added with evidence.</h3>
           </div>
           <p>
-            Future MSc and independent projects will document the question,
-            data, methods, results, limitations and code.
+            Future work will be added when it demonstrates a clear question,
+            method, result and reflection.
           </p>
-          <span className="status"><i /> Building</span>
-        </a>
+          <span className="status"><i /> In progress</span>
+        </div>
       </section>
 
       <section className="focus-band" aria-label="Current focus areas">
@@ -219,7 +219,14 @@ export default function Home() {
           related to geospatial technology, remote sensing and spatial data.
         </p>
         <div className="contact-row">
-          <span>Contact links will be added here.</span>
+          <div className="contact-links">
+            <a href="https://github.com/anna-misterkiewicz" target="_blank" rel="noreferrer">
+              GitHub <Arrow />
+            </a>
+            <a href="https://doi.org/10.1007/s41826-025-00113-2" target="_blank" rel="noreferrer">
+              Publication <Arrow />
+            </a>
+          </div>
           <a href="#top">Back to top <span aria-hidden="true">&#8593;</span></a>
         </div>
         <div className="footer-base">
