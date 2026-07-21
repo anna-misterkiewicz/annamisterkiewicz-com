@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       <section className="section" id="work">
-        <div className="section-heading">
+        <div className="section-heading" data-depth="0.035">
           <span className="section-index">01 / SELECTED WORK</span>
           <h2>Evidence over claims.</h2>
         </div>
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="survey-line line-d" />
             <span className="visual-number">01</span>
           </div>
-          <div className="project-copy">
+          <div className="project-copy" data-depth="0.055">
             <div>
               <p className="project-meta">GIS · SATELLITE IMAGERY · SPATIAL ANALYSIS · RESEARCH</p>
               <h3>Landscape analysis in Mongolia</h3>
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
         </article>
 
-        <div className="next-project portfolio-note">
+        <div className="next-project portfolio-note" data-depth="0.025">
           <span className="next-number">02</span>
           <div>
             <p className="project-meta">PORTFOLIO / GROWING</p>
@@ -139,18 +139,18 @@ export default function Home() {
       </section>
 
       <section className="focus-band" aria-label="Current focus areas">
-        <p>Current focus</p>
-        <div>
+        <p data-depth="0.025">Current focus</p>
+        <div data-depth="0.045">
           {focusAreas.map((area) => <span key={area}>{area}</span>)}
         </div>
       </section>
 
       <section className="section about" id="about">
-        <div className="section-heading">
+        <div className="section-heading" data-depth="0.035">
           <span className="section-index">02 / ABOUT</span>
           <h2>Spatial foundations.<br />A clear technical direction.</h2>
         </div>
-        <div className="about-grid">
+        <div className="about-grid" data-depth="0.04">
           <p className="lead">
             I bring a research foundation in GIS, remote sensing and spatial
             analysis to the next stage of my work in geospatial AI.
@@ -176,7 +176,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="education">
+        <div className="education" data-depth="0.025">
           <div>
             <span>2026 / FORWARD</span>
             <h3>MSc Geospatial Artificial Intelligence</h3>
@@ -191,13 +191,13 @@ export default function Home() {
       </section>
 
       <section className="section skills-section" id="skills">
-        <div className="section-heading">
+        <div className="section-heading" data-depth="0.035">
           <span className="section-index">03 / SKILLS</span>
           <h2>Tools, methods,<br />and practice.</h2>
         </div>
         <div className="skills-list">
           {skills.map((skill) => (
-            <div className="skill-row" key={skill.title}>
+            <div className="skill-row" key={skill.title} data-depth="0.018">
               <span>{skill.number}</span>
               <h3>{skill.title}</h3>
               <p>{skill.items}</p>
@@ -213,12 +213,12 @@ export default function Home() {
 
       <footer id="contact">
         <p className="section-index">04 / CONTACT</p>
-        <h2>Let&apos;s explore what<br />spatial data can show.</h2>
-        <p className="footer-intro">
+        <h2 data-depth="0.045">Let&apos;s explore what<br />spatial data can show.</h2>
+        <p className="footer-intro" data-depth="0.03">
           I am interested in opportunities, collaborations and conversations
           related to geospatial technology, remote sensing and spatial data.
         </p>
-        <div className="contact-row">
+        <div className="contact-row" data-depth="0.02">
           <div className="contact-links">
             <a href="https://github.com/anna-misterkiewicz" target="_blank" rel="noreferrer">
               GitHub <Arrow />
